@@ -3,7 +3,7 @@ Assembly is one of the key steps for the genome-centric metagenome analysis. It 
 
 ### Assembly of qc reads with Megahit
 ```
-#make an assembly directory in your project directory  
+#make an "assembly" directory in your project directory  
 >mkdir assembly  
 #cd into assembly directory  
 >cd assembly/  
@@ -21,18 +21,26 @@ After finishing the assembly, we first check the "megahit.log.txt" file to make 
 #check the simple stats for the assembly
 >tail megahit.log.txt
 ```
-After the successful assembly, your contig file is "final.contigs.fa".
+After the successful assembly, your contig file is "megahit_assembly/final.contigs.fa".
 
-### Assembly of qc reads with SPades
-While Megahit is a fast assembler, metaSPAdes can provide longer contigs, but is much slower. Regardless of assembly method, the produced contig file (.fasta or .fa) can be used in the rest of the metagenomics pipeline.  Here is an optional assembly with metaspades
+### Assembly of qc reads with metaSPAdes
+While Megahit is a fast assembler, metaSPAdes can provide longer contigs, but is much slower. Regardless of assembly method, the produced contig file (.fasta or .fa) can be used in the rest of the metagenomics pipeline.  Here is a metaSPAdes assembly example:  
 ```  
-#access metaspades parameters  
-metaspades.py -h  
+#assume you are in "assembly" directory  
+#print metaspades version  
+>metaspades.py -h  
+#print metaspades usage message  
+>metaspades.py -h  
 #do the assembly using quality controlled reads  
-metaspades.py -1 ../qc/coassembly.R1.fastq -2 ../qc/coassembly.R2.fastq -t 8 -o metaspades_out  
-#filter out contigs shorter than 500 bp  
-filterContigByLength.pl contigs.fasta 500 > contigs.500.fasta  
+>nohup metaspades.py -1 your_qc_R1_file -2 your_qc_R2_file -t 8 -m 100 -o metaspades_assembly  >& metaspades.log.txt&
 ```  
+After finishing the assembly, we first check the "metaspades.log.txt" file to make sure no errors occurred during assembly
+```
+#check log file to make sure there are no errors occurred during the assembly
+>more metaspades.log.txt  
+```
+After the successful assembly, your contig file is "metaspades_assembly/contigs.fasta". To know more about metaSPAdes output, please check its website. 
+
 ### Coassembly
 If you have multiple samples that you would like to co-assemble, concatenate the qc read files into one file for forward (R1) and one for reverse (R2).
 ```
