@@ -4,7 +4,7 @@ Genome assembly is the process that reconstructs genomes from short reads. There
 If you have multiple samples that you would like to co-assemble, concatenate the qc read files into one file for forward (R1) and one for reverse (R2).
 
 '''
-# go to the directory
+#go to the directory
 cd ~/mgworkshop2019/tutorials/qc
 
 #concatenate qc read files
