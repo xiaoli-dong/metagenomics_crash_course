@@ -1,22 +1,6 @@
 # Metagenome assembly
 Genome assembly is the process that reconstructs genomes from short reads. There are a number of metagenome assemblers widely used for Illumina sequences such as IDBA, SOAPDenovo2, MegaHit, and metaSPAdes. The following are examples on how to use MegaHit and metaSPAdes to do the assembly. Detailed tutorials are available from their website:
 
-If you have multiple samples that you would like to co-assemble, concatenate the qc read files into one file for forward (R1) and one for reverse (R2).
-
-```
-#go to the directory  
-cd ~/mgworkshop2019/tutorials/qc  
-
-#concatenate qc read files  
-cat *.qc.R1.fastq > coassembly.R1.fastq  
-cat *.qc.R2.fastq > coassembly.R2.fastq  
-#check that the number of sequences in the concatenated files is equal to the sum of the input files (quotes don’t always copy and paste well onto the command line, you may need to type it out)  
-grep -c ‘+’ S*.qc.R1.fastq  
-grep -c ‘+’ S*.qc.R2.fastq  
-
-grep -c ‘+’ coassembly.R1.fastq  
-grep -c ‘+’ coassembly.R2.fastq
-```
 ## Assembly of qc reads with Megahit
 ```
 #move up a directory  
@@ -50,4 +34,20 @@ cd megahit_assembly
 
 #run assembly statistics using BBmap stats tool  
 stats.sh final.contigs.fa > assembly_stats.txt
+```
+If you have multiple samples that you would like to co-assemble, concatenate the qc read files into one file for forward (R1) and one for reverse (R2).
+
+```
+#go to the directory  
+cd ~/mgworkshop2019/tutorials/qc  
+
+#concatenate qc read files  
+cat *.qc.R1.fastq > coassembly.R1.fastq  
+cat *.qc.R2.fastq > coassembly.R2.fastq  
+#check that the number of sequences in the concatenated files is equal to the sum of the input files (quotes don’t always copy and paste well onto the command line, you may need to type it out)  
+grep -c ‘+’ S*.qc.R1.fastq  
+grep -c ‘+’ S*.qc.R2.fastq  
+
+grep -c ‘+’ coassembly.R1.fastq  
+grep -c ‘+’ coassembly.R2.fastq
 ```
