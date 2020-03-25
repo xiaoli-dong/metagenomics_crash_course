@@ -3,16 +3,16 @@ Assembly is one of the key steps for the genome-centric metagenome analysis. It 
 
 ### Assembly of qc reads with Megahit
 ```
-#move up a directory  
->cd ..  
-#make an assembly directory  
+#make an assembly directory in your project directory  
 mkdir assembly  
 #cd into assembly directory  
 >cd assembly/  
-#access megahit parameters  
+#print megahit version  
+>megahit -v
+#print megahit usage message   
 >megahit -h  
 #do the assembly using quality controlled reads  
->megahit -1 ../qc/coassembly.R1.fastq -2 ../qc/coassembly.R2.fastq -t 8 -m 0.5 -o megahit_assembly  
+>megahit -1 your_qc_R1_file -2 your_qc_R2_file -t 8 -m 0.5 -o megahit_assembly  
 #filter out contigs shorter than 500 bp  
 >filterContigByLength.pl contigs.fasta 500 > contigs.500.fasta
 ```
