@@ -26,17 +26,8 @@ metaspades.py -1 ../qc/coassembly.R1.fastq -2 ../qc/coassembly.R2.fastq -t 8 -o 
 #filter out contigs shorter than 500 bp  
 filterContigByLength.pl contigs.fasta 500 > contigs.500.fasta  
 ```  
-### Assembly statistics  
-To assess the assembly, a tool from bbmap is used to generate summary statistics.
-```
-#go into directory  
-cd megahit_assembly  
-
-#run assembly statistics using BBmap stats tool  
-stats.sh final.contigs.fa > assembly_stats.txt
-```
+### Coassembly
 If you have multiple samples that you would like to co-assemble, concatenate the qc read files into one file for forward (R1) and one for reverse (R2).
-
 ```
 #go to the directory  
 cd ~/mgworkshop2019/tutorials/qc  
@@ -50,4 +41,13 @@ grep -c ‘+’ S*.qc.R2.fastq
 
 grep -c ‘+’ coassembly.R1.fastq  
 grep -c ‘+’ coassembly.R2.fastq
+```
+### Assembly statistics  
+To assess the assembly, a tool from bbmap is used to generate summary statistics.
+```
+#go into directory  
+cd megahit_assembly  
+
+#run assembly statistics using BBmap stats tool  
+stats.sh final.contigs.fa > assembly_stats.txt
 ```
