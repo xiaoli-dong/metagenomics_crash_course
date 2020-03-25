@@ -4,7 +4,7 @@ Assembly is one of the key steps for the genome-centric metagenome analysis. It 
 ### Assembly of qc reads with Megahit
 ```
 #make an assembly directory in your project directory  
-mkdir assembly  
+>mkdir assembly  
 #cd into assembly directory  
 >cd assembly/  
 #print megahit version  
@@ -12,10 +12,17 @@ mkdir assembly
 #print megahit usage message   
 >megahit -h  
 #do the assembly using quality controlled reads  
->megahit -1 your_qc_R1_file -2 your_qc_R2_file -t 8 -m 0.5 -o megahit_assembly  
-#filter out contigs shorter than 500 bp  
->filterContigByLength.pl contigs.fasta 500 > contigs.500.fasta
+>nohup megahit -1 your_qc_R1_file -2 your_qc_R2_file -t 8 -m 0.5 -o megahit_assembly  >& megahit.log.txt &
 ```
+After finishing the assembly, we first check the the megahit.log.txt file to make sure there are no errors occurred and also to look at some of the simple stats such as min length of the contigs, max length of the contigs, N50  
+```
+#check log file to make sure there are no errors occurred during the assembly
+>more megahit.log.txt
+#check the simple stats for the assembly
+>tail megahit.log.txt
+```
+After the successful assembly, your contig file is "final.contigs.fa".
+
 ### Assembly of qc reads with SPades
 While Megahit is a fast assembler, metaSPAdes can provide longer contigs, but is much slower. Regardless of assembly method, the produced contig file (.fasta or .fa) can be used in the rest of the metagenomics pipeline.  Here is an optional assembly with metaspades
 ```  
