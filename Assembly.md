@@ -15,7 +15,7 @@ mkdir assembly
 >megahit -1 ../qc/coassembly.R1.fastq -2 ../qc/coassembly.R2.fastq -t 8 -m 0.5 -o megahit_assembly  
 #filter out contigs shorter than 500 bp  
 >filterContigByLength.pl contigs.fasta 500 > contigs.500.fasta
-```  
+```
 ### Assembly of qc reads with SPades
 While Megahit is a fast assembler, metaSPAdes can provide longer contigs, but is much slower. Regardless of assembly method, the produced contig file (.fasta or .fa) can be used in the rest of the metagenomics pipeline.  Here is an optional assembly with metaspades
 ```  
