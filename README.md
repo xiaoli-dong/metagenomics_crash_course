@@ -1,1 +1,1 @@
-# metagenomic_crash_course
+# metagenomic crash course
