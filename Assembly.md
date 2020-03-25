@@ -16,9 +16,8 @@ mkdir assembly
 #filter out contigs shorter than 500 bp  
 >filterContigByLength.pl contigs.fasta 500 > contigs.500.fasta
 ```  
-While Megahit is a fast assembler, metaSPAdes can provide longer contigs, but is much slower. Regardless of assembly method, the produced contig file (.fasta or .fa) can be used in the rest of the metagenomics pipeline.  
-Here is an optional assembly with metaspades
-
+### Assembly of qc reads with SPades
+While Megahit is a fast assembler, metaSPAdes can provide longer contigs, but is much slower. Regardless of assembly method, the produced contig file (.fasta or .fa) can be used in the rest of the metagenomics pipeline.  Here is an optional assembly with metaspades
 ```  
 #access metaspades parameters  
 metaspades.py -h  
@@ -27,6 +26,7 @@ metaspades.py -1 ../qc/coassembly.R1.fastq -2 ../qc/coassembly.R2.fastq -t 8 -o 
 #filter out contigs shorter than 500 bp  
 filterContigByLength.pl contigs.fasta 500 > contigs.500.fasta  
 ```  
+### Assembly statistics  
 To assess the assembly, a tool from bbmap is used to generate summary statistics.
 ```
 #go into directory  
