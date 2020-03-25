@@ -1,5 +1,6 @@
 # Metagenome assembly
 Genome assembly is the process that reconstructs genomes from short reads. There are a number of metagenome assemblers widely used for Illumina sequences such as IDBA, SOAPDenovo2, MegaHit, and metaSPAdes. The following are examples on how to use MegaHit and metaSPAdes to do the assembly. Detailed tutorials are available from their website:
+
 If you have multiple samples that you would like to co-assemble, concatenate the qc read files into one file for forward (R1) and one for reverse (R2). 
 '''
 # go to the directory
