@@ -4,17 +4,17 @@ Genome assembly is the process that reconstructs genomes from short reads. There
 ### Assembly of qc reads with Megahit
 ```
 #move up a directory  
-cd ..  
+>cd ..  
 #make an assembly directory  
 mkdir assembly  
 #cd into assembly directory  
-cd assembly/  
+>cd assembly/  
 #access megahit parameters  
-megahit -h  
+>megahit -h  
 #do the assembly using quality controlled reads  
-megahit -1 ../qc/coassembly.R1.fastq -2 ../qc/coassembly.R2.fastq -t 8 -m 0.5 -o megahit_assembly  
+>megahit -1 ../qc/coassembly.R1.fastq -2 ../qc/coassembly.R2.fastq -t 8 -m 0.5 -o megahit_assembly  
 #filter out contigs shorter than 500 bp  
-filterContigByLength.pl contigs.fasta 500 > contigs.500.fasta
+>filterContigByLength.pl contigs.fasta 500 > contigs.500.fasta
 ```  
 While Megahit is a fast assembler, metaSPAdes can provide longer contigs, but is much slower. Regardless of assembly method, the produced contig file (.fasta or .fa) can be used in the rest of the metagenomics pipeline.  
 Here is an optional assembly with metaspades
