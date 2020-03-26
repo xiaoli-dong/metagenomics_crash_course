@@ -50,8 +50,8 @@ The process of assembling the quality controlled sequences from multiple samples
 #do the assembly using quality controlled reads  
 >nohup metaspades.py --pe1-1 your_qc_R1_file --pe2-1 your_qc_R1_file2 --pe3-1 your_qc_R1_file3  --pe1-2 your_qc_R1_file --pe2-2 your_qc_R1_file2 --pe3-2 your_qc_R1_file3  -t 8 -m 100 -o metaspades_coassembly  >& metaspades_coassembly.log.txt&
 ```
-### Assembly statistics  
-To assess the assembly, a tool from bbmap is used to generate summary statistics.
+### Assembly stats
+You can use seqStats.pl included in the bin directory to generate the simple stats for the assembled contigs
 ```
 #go into directory  
 cd megahit_assembly  
