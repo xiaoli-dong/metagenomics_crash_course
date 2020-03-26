@@ -2,7 +2,7 @@
 This crash course is offered by [Marc Strous](https://www.ucalgary.ca/labs/ebg/people/marc-strous) to train our new graduate students and postdoctoral researchers in the [Energy Bioengineering and Geomicrobiology](https://www.ucalgary.ca/labs/ebg) group. This is a genome-centric metagenomics data analysis course, which teaches students and researchers how to obtain provisional whole genomes of individual populations from a mixed microbial community using metagenomics. The tutorials of this course were prepared by [Xiaoli Dong](https://www.ucalgary.ca/labs/ebg/people/xiaoli-dong).  
 
 
-<p align="center"><img src="images/metagenomics_overview.jpg" title="Genome-centric metagenomics data analysis workflow" width=500 ><br>The metagenomics data analysis workflow was created by Jackie Zorz.</p>
+<p align="center"><img src="images/metagenomics_overview.jpg" title="Genome-centric metagenomics data analysis workflow" width=500 ><br><font size=10>The workflow was prepared by Jackie Zorz</font>.</p>
 
 ## Table of contents
 * [Short read quality control](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/qc)  
