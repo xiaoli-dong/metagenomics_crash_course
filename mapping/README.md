@@ -25,7 +25,7 @@ Perform mapping
 #BBMap will produce sorted and indexed bam file
 >bbmap.sh ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file out=your_sample_id.bam bs=bs.sh; sh bs.sh covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt threads=8
 ```
-You will repeat the BBMap mapping process for all your sequenced libraries that you want to map.
+You need to repeat the BBMap mapping process for all your sequenced libraries that you want to map to your assembly.
 ## Short reads mapping using Bowtie2
 Create output dirctory
 ```
@@ -36,15 +36,15 @@ Create output dirctory
 Perform mapping
 ```
 #step 1: build index
-bowtie2-build -f your_contigs_longer_than_500bp contigs
+bowtie2-build -f your_contigs_longer_than_500bp bowtie2_contigs
 
 #step 2: mapping quality controlled reads back to contigs and index sorted bam file
-(bowtie2 --threads 8 --local -x contigs -q -1 your_qc_R1_file -2 your_qc_R2_file  | samtools view -@ 8 -Sb1 - | samtools sort -m 10G -@ 8 -o your_sample_id.sorted.bam -) 3>&1 1>&2 2>&3 | tee your_sample_id.log.txt
+(bowtie2 --threads 8 --local -x bowtie2_contigs -q -1 your_qc_R1_file -2 your_qc_R2_file  | samtools view -@ 8 -Sb1 - | samtools sort -m 10G -@ 8 -o your_sample_id.bowtie2_sorted.bam -) 3>&1 1>&2 2>&3 | tee your_sample_id.log.txt
 
 #step 3: build index
-samtools index -@ 8 your_sample_id.sorted.bam
+samtools index -@ 8 your_sample_id.bowtie2_sorted.bam
 ```
-You will repeat the step-by-step bowtie2 mapping procedures (from step 2 to step 3) for all your sequeced libraries that you want to map.
+You need repeat the step-by-step bowtie2 mapping procedures (from step 2 to step 3) for all your sequenced libraries that you want to map to your assembly.
 ## Make contig depth profiles
 The contig depth profiles will be used in the downstream metagenome binning and annotation process.
 ```
