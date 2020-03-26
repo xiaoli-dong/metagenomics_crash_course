@@ -59,10 +59,20 @@ jgi_summarize_bam_contig_depths --outputDepth  depth_bowtie2.txt mapping_bowtie2
 ## Manipulate SAM and BAM file using SAMTools  
 The mapping tools produced alignment infromation is contained in a SAM or BAM file. SAM stands for Sequence Alignment/Map format and BAM is the binary version of the plain text SAM format. Samtools is a set of utilities that manipulate alignments in the BAM format. In the following section, we explain how to manipulate SAM or BAM files with samtools 
 ```
+#sam file is a text file and can be veiwed by cat, more, less, head, tail
+>head your_file.sam
+
 #print samtools usage message
 >samtools
 #or 
 >samtools --help
-#to look at the content of the bam file
->samtools view sorted_your_sample_id.bam | less
+
+#convert a sam file to a bam file
+>samtools view -bS your_file.sam > your_file.bam
+#to look at the content of a bam file
+>samtools view your_file.bam | less
+#convert a sam file to a sorted bam file
+>samtools view -bS your_file.sam | samtools sort - -o your_file.sorted.bam
+#create a bam index file
+>samtools index your_file.sorted.bam
 ```
