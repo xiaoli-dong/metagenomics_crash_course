@@ -16,17 +16,24 @@ Mapping is the process of aligning short reads back to references genomes, genes
 
 ### Short reads mapping using BBMap
 
-Create BBMap output dirctory
+Create output dirctory
 ```
 #assume you are in "mapping" directory, create directory and move into the directory
 >mkdir mapping_bbmap
 >cd mapping_bbmap
 ```
-Perform BBMap mapping
+Perform mapping
 ```
 >bbmap.sh ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file out=your_sample_id.bam bs=bs.sh; sh bs.sh covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt threads=8
 ```
 To look at the produced bam file use:
 ```
 >samtools view sorted_your_sample_id.bam | less
+```
+### Short reads mapping using Bowtie2
+Create output dirctory
+```
+#assume you are in "mapping" directory, create directory and move into the directory
+>mkdir mapping_bowtie2
+>cd mapping_bowtie2
 ```
