@@ -19,21 +19,14 @@ Mapping is the process of aligning short reads back to references genomes, genes
 Create BBMap output dirctory
 ```
 #assume you are in "mapping" directory, create directory and move into the directory
-mkdir mapping_bbmap
-cd mapping_bbmap
+>mkdir mapping_bbmap
+>cd mapping_bbmap
 ```
 Perform the step by step procedures for each of your assembled contigs
 ```
-#step 1: only keep the contigs longer than 500bp
-perl /gpfs/ebg_data/programs/metaerg/bin/filterContigByLength.pl  ../assembly/megahit_assembly/final.contigs.fa 500 > contigs.fasta
-
-#mapping sample1
-bbmap.sh ref=contigs.fasta in=../qc/S1.qc.R1.fastq in2=../qc/S1.qc.R2.fastq out=S1.sam covstats=S1_bbmap_covstats.txt scafstats=S1_bbmap_scafstats.txt threads=8
-
-#converting sam file to bam file and sort the bam file
-samtools view -b S1.sam | samtools sort -o S1.sorted.bam
-
-#index sorted bam file
-samtools index S1.sorted.bam
-
+>bbmap.sh ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file out=your_sample_id.bam bs=bs.sh; sh bs.sh covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt threads=8
+```
+To look at the produced bam file use:
+```
+samtools view sorted_your_sample_id.bam | less
 ```
