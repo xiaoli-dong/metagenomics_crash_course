@@ -1,1 +1,1 @@
-# metagenomic crash course
+# EBG metagenomics crash course
