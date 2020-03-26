@@ -50,11 +50,11 @@ You need repeat the step-by-step bowtie2 mapping procedures (from step 2 to step
 The contig depth profiles will be used in the downstream metagenome binning and annotation process.
 ```
 #assume we are in "mapping" directory
-
 #generate contig depth profile using BBMap produced sorted and indexed bam files.
 jgi_summarize_bam_contig_depths --outputDepth  depth_bbmap.txt mapping_bbmap/*.bam
+
 #generate contig depth profile using Bowtie2 produced sorted and indexed bam files.
-jgi_summarize_bam_contig_depths --outputDepth  depth_bbmap.txt mapping_bowtie2/*.bam
+jgi_summarize_bam_contig_depths --outputDepth  depth_bowtie2.txt mapping_bowtie2/*.bam
 ```
 ## Converting BAM to SAM and vice versa
 ```
