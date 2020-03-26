@@ -68,5 +68,5 @@ For all the downstream analysis, the contigs shorter than 500 bp will be exclude
 #filter out contigs shorter than 500 bp from metaSPAdes assembly
 >perl filterContigByLength.pl metaspades_assembly/contigs.fasta > metaspades_assembly/contigs.500.fasta
 #filter out contigs shorter than 500 bp from MEGAHIT assembly
->perl filterContigByLength.pl megahit_assembly/final.contigs.fa > egahit_assembly/contigs.500.fasta
+>perl filterContigByLength.pl megahit_assembly/final.contigs.fa > megahit_assembly/contigs.500.fasta
 ```
