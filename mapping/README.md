@@ -25,14 +25,13 @@ Create output dirctory
 Perform mapping
 ```
 #BBMap will produce sorted and indexed bam file
->bbmap.sh ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file out=your_sample_id.bam bs=bs.sh; sh bs.sh covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt threads=8
+>bbmap.sh ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file out=your_sample_id.bam bs=bs.sh; sh bs.sh covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt threads=8  
 
-
-```
-To look at the produced bam file use:
-```
+#to look at the content of the bam file
 >samtools view sorted_your_sample_id.bam | less
 ```
+You will repeat the BBMap mapping process for all your sequenced libraries that you want to map. 
+
 ## Short reads mapping using Bowtie2
 Create output dirctory
 ```
@@ -51,6 +50,8 @@ bowtie2-build -f your_contigs_longer_than_500bp contigs
 #step 3: build index
 samtools index -@ 8 your_sample_id.sorted.bam
 ```
+You will repeat the step-by-step bowtie2 mapping procedures (from step 2 to step 3) for all your sequeced libraries that you want to map. 
+
 ## Make contig depth profiles
 The contig depth profile will be used in the downstream metagenome binning and annotation process.  
 ```
