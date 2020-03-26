@@ -13,9 +13,7 @@ Mapping is the process of aligning short reads back to references genomes, genes
 #go into mapping directory
 >cd mapping
 ```
-
 ## Short reads mapping using BBMap
-
 Create output dirctory
 ```
 #assume you are in "mapping" directory, create directory and move into the directory
@@ -31,7 +29,6 @@ Perform mapping
 >samtools view sorted_your_sample_id.bam | less
 ```
 You will repeat the BBMap mapping process for all your sequenced libraries that you want to map.
-
 ## Short reads mapping using Bowtie2
 Create output dirctory
 ```
@@ -51,7 +48,6 @@ bowtie2-build -f your_contigs_longer_than_500bp contigs
 samtools index -@ 8 your_sample_id.sorted.bam
 ```
 You will repeat the step-by-step bowtie2 mapping procedures (from step 2 to step 3) for all your sequeced libraries that you want to map.
-
 ## Make contig depth profiles
 The contig depth profiles will be used in the downstream metagenome binning and annotation process.
 ```
