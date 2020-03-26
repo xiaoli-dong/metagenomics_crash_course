@@ -65,7 +65,7 @@ While MEGAHIT generates some simple stats for your assembles, metaSPAdes are not
 >more metaspades_assembly/contigs.stats.txt
 ```
 ## Filter out short contigs  
-For all the downstream analysis, the contigs shorter than 500 bp will be excluded. You can use  "filterContigByLength.pl" script to do it. 
+For all the downstream analysis, the contigs shorter than 500 bp will be excluded. You can use  download the "filterContigByLength.pl" script from the "bin" directory here and then run the following commands:
 ```
 #assume you are in the "assembly" directory and downloaded "filterContigByLength.pl" to the directory
 #filter out contigs shorter than 500 bp from metaSPAdes assembly
