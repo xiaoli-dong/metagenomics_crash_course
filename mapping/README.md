@@ -6,7 +6,7 @@ Mapping is the process of aligning short reads back to references genomes, genes
 * Learn how to use SAMTools to manipulate SAM and BAM files
 * Calculate the contig depth profile based on the short reads mapping results
 
-### Create mapping directory  
+## Create mapping directory  
 ```
 #make an "mapping" directory in your project directory  
 >mkdir mapping  
@@ -14,7 +14,7 @@ Mapping is the process of aligning short reads back to references genomes, genes
 >cd mapping
 ```
 
-### Short reads mapping using BBMap
+## Short reads mapping using BBMap
 
 Create output dirctory
 ```
@@ -31,7 +31,7 @@ To look at the produced bam file use:
 ```
 >samtools view sorted_your_sample_id.bam | less
 ```
-### Short reads mapping using Bowtie2
+## Short reads mapping using Bowtie2
 Create output dirctory
 ```
 #assume you are in "mapping" directory, make and move into the directory
