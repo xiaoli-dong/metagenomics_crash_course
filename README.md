@@ -4,7 +4,7 @@ This crash course is offered by [Marc Strous](https://www.ucalgary.ca/labs/ebg/p
 <!-- Embed PDF File -->
 <object data="images/metagenomics_overview.pdf" type="application/x-pdf" title="SamplePdf" width="500" height="720">
     <a href="images/metagenomics_overview.pdf">shree</a> 
-</object>
+</object>  
 ## Table of contents
 * [Short read quality control](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/qc)  
 * [Metagenome assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly)  
