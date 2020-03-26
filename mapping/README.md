@@ -23,7 +23,7 @@ Create output dirctory
 Map the quality controlled reads back to your assembly
 ```
 #BBMap will produce sorted and indexed bam file
->bbmap.sh ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file out=your_sample_id.bam bs=bs.sh; sh bs.sh covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt threads=8
+>nohup bbmap.sh ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file out=your_sample_id.bam bs=bs.sh; sh bs.sh covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt threads=8 statsfile=your_sample_id.bbmap_stats.txt >& your_sample_id.bbmap.log.txt &
 ```
 You need to repeat the BBMap mapping process for all your sequenced libraries that you want to map to your assembly.
 ## Short reads mapping using Bowtie2
