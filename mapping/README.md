@@ -53,7 +53,7 @@ samtools index -@ 8 your_sample_id.sorted.bam
 You will repeat the step-by-step bowtie2 mapping procedures (from step 2 to step 3) for all your sequeced libraries that you want to map. 
 
 ## Make contig depth profiles
-The contig depth profile will be used in the downstream metagenome binning and annotation process.  
+The contig depth profiles will be used in the downstream metagenome binning and annotation process.  
 ```
 #assume we are in "mapping" directory  
 
