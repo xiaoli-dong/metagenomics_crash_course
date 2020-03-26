@@ -1,16 +1,16 @@
-# Read Mapping. 
+# Read Mapping.
 Mapping is the process of aligning short reads back to references genomes, genes, or contigs. The mapping results can be used to compute contig coverages, quantify genes, infer taxonomic diversities, functional and pathway profiles, and improve binning results. There are many mappers publicly available. In this practice session, you will:
 
 * Learn how to perform mapping using BBMap and bowtie2
-* Understand file formats for aligned reads: sam file 
+* Understand file formats for aligned reads: sam file
 * Learn how to use SAMTools to manipulate SAM and BAM files
 * Calculate the contig depth profile based on the short reads mapping results
 
-## Create mapping directory  
+## Create mapping directory
 ```
-#make an "mapping" directory in your project directory  
->mkdir mapping  
-#go into mapping directory  
+#make an "mapping" directory in your project directory
+>mkdir mapping
+#go into mapping directory
 >cd mapping
 ```
 
@@ -25,12 +25,12 @@ Create output dirctory
 Perform mapping
 ```
 #BBMap will produce sorted and indexed bam file
->bbmap.sh ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file out=your_sample_id.bam bs=bs.sh; sh bs.sh covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt threads=8  
+>bbmap.sh ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file out=your_sample_id.bam bs=bs.sh; sh bs.sh covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt threads=8
 
 #to look at the content of the bam file
 >samtools view sorted_your_sample_id.bam | less
 ```
-You will repeat the BBMap mapping process for all your sequenced libraries that you want to map. 
+You will repeat the BBMap mapping process for all your sequenced libraries that you want to map.
 
 ## Short reads mapping using Bowtie2
 Create output dirctory
@@ -50,16 +50,15 @@ bowtie2-build -f your_contigs_longer_than_500bp contigs
 #step 3: build index
 samtools index -@ 8 your_sample_id.sorted.bam
 ```
-You will repeat the step-by-step bowtie2 mapping procedures (from step 2 to step 3) for all your sequeced libraries that you want to map. 
+You will repeat the step-by-step bowtie2 mapping procedures (from step 2 to step 3) for all your sequeced libraries that you want to map.
 
 ## Make contig depth profiles
-The contig depth profiles will be used in the downstream metagenome binning and annotation process.  
+The contig depth profiles will be used in the downstream metagenome binning and annotation process.
 ```
-#assume we are in "mapping" directory  
+#assume we are in "mapping" directory
 
-#generate contig depth profile using BBMap produced sorted and indexed bam files. 
-jgi_summarize_bam_contig_depths --outputDepth  depth_bbmap.txt mapping_bbmap/*.bam  
-
-#generate contig depth profile using Bowtie2 produced sorted and indexed bam files. 
+#generate contig depth profile using BBMap produced sorted and indexed bam files.
+jgi_summarize_bam_contig_depths --outputDepth  depth_bbmap.txt mapping_bbmap/*.bam
+#generate contig depth profile using Bowtie2 produced sorted and indexed bam files.
 jgi_summarize_bam_contig_depths --outputDepth  depth_bbmap.txt mapping_bowtie2/*.bam
 ```
