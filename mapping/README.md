@@ -23,7 +23,7 @@ Create output dirctory
 Map the quality controlled reads back to your assembly
 ```
 #BBMap will produce sorted and indexed bam file 
->nohup bbmap.sh ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt statsfile=your_sample_id.bbmap_stats.txt threads=8 out=your_sample_id.bbmap.bam bs=bs.sh; sh bs.sh >& your_sample_id.bbmap.log.txt &
+>nohup bbmap.sh -Xmx50g ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt statsfile=your_sample_id.bbmap_stats.txt threads=8 out=your_sample_id.bbmap.bam bs=bs.sh; sh bs.sh >& your_sample_id.bbmap.log.txt &
 ```
 The above command will result sorted and indexed BAM file: "your_sample_id.bbmap_sorted.bam" and "your_sample_id.bbmap.bam.bai"  
 
