@@ -41,21 +41,14 @@ After finishing the assembly, we first check the "metaspades.log.txt" file to ma
 ```
 After the successful assembly, your contig file is "metaspades_assembly/contigs.fasta". To know more about metaSPAdes output, please check its website. 
 
-### Coassembly
-If you have multiple samples that you would like to co-assemble, concatenate the qc read files into one file for forward (R1) and one for reverse (R2).
+### Co-assembly
+The process of assembling the quality controlled sequences from multiple samples togehter is called co-assembly
 ```
-#go to the directory  
-cd ~/mgworkshop2019/tutorials/qc  
-
-#concatenate qc read files  
-cat *.qc.R1.fastq > coassembly.R1.fastq  
-cat *.qc.R2.fastq > coassembly.R2.fastq  
-#check that the number of sequences in the concatenated files is equal to the sum of the input files (quotes don’t always copy and paste well onto the command line, you may need to type it out)  
-grep -c ‘+’ S*.qc.R1.fastq  
-grep -c ‘+’ S*.qc.R2.fastq  
-
-grep -c ‘+’ coassembly.R1.fastq  
-grep -c ‘+’ coassembly.R2.fastq
+#assume you are in "assembly" directory
+#megahit coassembly using quality controlled reads  
+>nohup megahit -1 your_qc_R1_file1,your_qc_R1_file2,your_qc_R1_file3 -2 your_qc_R2_file,your_qc_R2_file2,your_qc_R3_file3 -t 8 -m 0.5 -o megahit_coassembly  >& megahit_coassembly.log.txt &
+#do the assembly using quality controlled reads  
+>nohup metaspades.py --pe1-1 your_qc_R1_file --pe2-1 your_qc_R1_file2 --pe3-1 your_qc_R1_file3  --pe1-2 your_qc_R1_file --pe2-2 your_qc_R1_file2 --pe3-2 your_qc_R1_file3  -t 8 -m 100 -o metaspades_coassembly  >& metaspades_coassembly.log.txt&
 ```
 ### Assembly statistics  
 To assess the assembly, a tool from bbmap is used to generate summary statistics.
