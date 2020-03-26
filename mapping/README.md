@@ -14,7 +14,7 @@ Mapping is the process of aligning short reads back to references genomes, genes
 >cd mapping
 ```
 
-### Mapping short reads using BBMap
+### Short reads mapping using BBMap
 
 Create BBMap output dirctory
 ```
@@ -28,5 +28,5 @@ Perform the step by step procedures for each of your assembled contigs
 ```
 To look at the produced bam file use:
 ```
-samtools view sorted_your_sample_id.bam | less
+>samtools view sorted_your_sample_id.bam | less
 ```
