@@ -1,8 +1,8 @@
 # Read Mapping.
 Mapping is the process of aligning short reads back to references genomes, genes, or contigs. The mapping results can be used to compute contig coverages, quantify genes, infer taxonomic diversities, functional and pathway profiles, and improve binning results. There are many mappers publicly available. In this practice session, you will:
 
-* Learn how to perform mapping using BBMap and bowtie2
-* Understand file formats for aligned reads: sam file
+* Learn how to perform mapping using [BBMap](https://jgi.doe.gov/data-and-tools/bbtools/) and [bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+* Understand file formats for aligned reads: [SAM](http://samtools.github.io/hts-specs/SAMv1.pdf) file
 * Learn how to use SAMTools to manipulate SAM and BAM files
 * Calculate the contig depth profile based on the short reads mapping results
 
