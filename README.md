@@ -5,7 +5,7 @@ This crash course is offered by [Marc Strous](https://www.ucalgary.ca/labs/ebg/p
 * [Short read quality control](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/qc)  
 * [Metagenome assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly)  
 ** [MEGAHIT assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly#assembly-of-qc-reads-with-megahit)  
-** [metaSPAdes assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly#assembly-of-qc-reads-with-metaspades)
+** [metaSPAdes assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly#assembly-of-qc-reads-with-metaspades)  
 ** [Co-assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly#co-assembly)  
 * [Short read mapping](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping)  
 ** [Using BBMap](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping#short-reads-mapping-using-bbmap)  
