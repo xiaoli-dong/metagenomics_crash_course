@@ -51,7 +51,7 @@ bowtie2-build -f your_contigs_longer_than_500bp contigs
 #step 3: build index
 samtools index -@ 8 your_sample_id.sorted.bam
 ```
-## generate contig depth profile
+## generate contig depth profiles
 The contig depth profile will be used in the downstream metagenome binning and annotation process.  
 ```
 #assume we are in "mapping directory"
