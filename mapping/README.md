@@ -44,7 +44,7 @@ Perform mapping
 bowtie2-build -f your_contigs_longer_than_500bp contigs
 
 #step 2: mapping quality controlled reads back to contigs and index sorted bam file
-(bowtie2 --threads 8 --local -x contigs -q -1 your_qc_R1_file -2 your_qc_R2_file  | samtools view -@ 8 -Sb1 - | samtools sort -m 10G -@ 8 -o your_sample_id.sorted.bam -) 3>&1 1>&2 2>&3 | tee S1_stderr.log
+(bowtie2 --threads 8 --local -x contigs -q -1 your_qc_R1_file -2 your_qc_R2_file  | samtools view -@ 8 -Sb1 - | samtools sort -m 10G -@ 8 -o your_sample_id.sorted.bam -) 3>&1 1>&2 2>&3 | tee your_sample_id.log.txt
 
 #step 3: build index
 samtools index -@ 8 your_sample_id.sorted.bam
