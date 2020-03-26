@@ -26,6 +26,8 @@ Perform mapping
 ```
 #BBMap will produce sorted and indexed bam file
 >bbmap.sh ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file out=your_sample_id.bam bs=bs.sh; sh bs.sh covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt threads=8
+
+
 ```
 To look at the produced bam file use:
 ```
@@ -48,4 +50,14 @@ bowtie2-build -f your_contigs_longer_than_500bp contigs
 
 #step 3: build index
 samtools index -@ 8 your_sample_id.sorted.bam
+```
+## generate contig depth profile
+The contig depth profile will be used in the downstream metagenome binning and annotation process.  
+```
+#assume we are in "mapping directory"
+#generate contig depth profile using BBMap produced sorted and indexed bam files. 
+jgi_summarize_bam_contig_depths --outputDepth  depth_bbmap.txt mapping_bbmap/*.bam  
+
+#generate contig depth profile using Bowtie2 produced sorted and indexed bam files. 
+jgi_summarize_bam_contig_depths --outputDepth  depth_bbmap.txt mapping_bowtie2/*.bam
 ```
