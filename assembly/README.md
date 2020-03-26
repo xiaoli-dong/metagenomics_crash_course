@@ -1,13 +1,16 @@
 # Metagenome assembly
 Assembly is one of the key steps for the genome-centric metagenome analysis. It is the process that reconstructs genomes using your quality controlled sequences. The assemblers can be different depending on the sequence platforms used to generate the sequences. In this tutorial, we assume that your sequences are short reads generated using Illumina platforms. There are many tools available to assembly the Illumina short reads, for example: [IDBA-UD](https://academic.oup.com/bioinformatics/article/28/11/1420/266973), [MEGAHIT](https://github.com/voutcn/megahit), and [metaSPAdes](http://cab.spbu.ru/software/spades/). In this tutorial, we are using MEGAHIT and metaSPAdes.
 
-### Assembly of qc reads with Megahit
-
+### Create assembly directory  
 ```
 #make an "assembly" directory in your project directory  
 >mkdir assembly  
 #cd into assembly directory  
 >cd assembly/  
+```
+### Assembly of qc reads with Megahit
+
+```
 #print megahit version  
 >megahit -v
 #print megahit usage message   
