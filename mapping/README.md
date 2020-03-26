@@ -54,7 +54,7 @@ samtools index -@ 8 your_sample_id.sorted.bam
 ## generate contig depth profiles
 The contig depth profile will be used in the downstream metagenome binning and annotation process.  
 ```
-#assume we are in "mapping directory"
+#assume we are in "mapping" directory
 #generate contig depth profile using BBMap produced sorted and indexed bam files. 
 jgi_summarize_bam_contig_depths --outputDepth  depth_bbmap.txt mapping_bbmap/*.bam  
 
