@@ -33,7 +33,7 @@ To look at the produced bam file use:
 ### Short reads mapping using Bowtie2
 Create output dirctory
 ```
-#assume you are in "mapping" directory, create directory and move into the directory
+#assume you are in "mapping" directory, make and move into the directory
 >mkdir mapping_bowtie2
 >cd mapping_bowtie2
 ```
