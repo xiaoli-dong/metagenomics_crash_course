@@ -51,11 +51,11 @@ The process of assembling the quality controlled sequences from multiple samples
 >nohup metaspades.py --pe1-1 your_qc_R1_file --pe2-1 your_qc_R1_file2 --pe3-1 your_qc_R1_file3  --pe1-2 your_qc_R1_file --pe2-2 your_qc_R1_file2 --pe3-2 your_qc_R1_file3  -t 8 -m 100 -o metaspades_coassembly  >& metaspades_coassembly.log.txt&
 ```
 ### Assembly stats
-You can use seqStats.pl included in the bin directory to generate the simple stats for the assembled contigs
+While MEGAHIT generates some simple stats for your assembles, metaSPAdes are not generating stasts at the end of the assembling. you can download the "seqStats.pl" in the "bin" directory here to get the information.
 ```
-#go into directory  
-cd megahit_assembly  
-
-#run assembly statistics using BBmap stats tool  
-stats.sh final.contigs.fa > assembly_stats.txt
+#assume you are in the "assembly" directory and downloaded the "seqStats.pl" file into the directory
+#generate the stats for metaSPAdes assembly
+>perl seqStats.pl -f fasta -s metaspades_assembly/contigs.fasta > metaspades_assembly/contigs.stats.txt
+#check the produced stats for the assembly  
+>more metaspades_assembly/contigs.stats.txt
 ```
