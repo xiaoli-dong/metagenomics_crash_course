@@ -1,7 +1,7 @@
 # Short read quality control  
 ## Short reads quality assessment
 
-Raw read quality control is the first step of metagenomic data analysis. Quality control is a multistep process. First, raw sequence quality assessment should be performed. This quality assessment should be proactive and comprehensive. This is an opportunity for you to know your data, which will enable you to perform downstream analyses with (more) appropriate assumptions and parameters. Second, the bioinformatics tools will be used to detect any problems, correct errors, and improve the sequence quality.  After the quality control process (exercise 1-2), the quality assessment procedure should be applied to the quality controlled reads again to make sure the remaining reads have sufficient quality for the downstream analysis.
+Raw read quality control is the first step of metagenomic data analysis. Quality control is a multistep process. First, raw sequence quality assessment should be performed. This quality assessment should be proactive and comprehensive. This is an opportunity for you to know your data, which will enable you to perform downstream analyses with (more) appropriate assumptions and parameters. Second, the bioinformatics tools will be used to detect any problems, correct errors, and improve the sequence quality.  After the quality control process, the quality assessment procedure should be applied to the quality controlled reads again to make sure the remaining reads have sufficient quality for the downstream analysis.
 
 In this session, We are providing a guideline on how to perform the raw read quality assessment. The learning outcome will be:  
 * Know how to manipulate a fastq file  
