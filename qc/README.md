@@ -45,14 +45,9 @@ mkdir qc
 # go to the directory
 cd qc
 ```
-#### The QC can be run step-by-step for each sample as shown below:
+#### Short reads quality control using [BBDuk](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/)
+The order of the QC commands can affect the quality control results. 
 ```
-
-#reference: https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/
-#The order of the QC commands can affect the quality control results. 
-
-#Sample 1
-
 #Step 1: trims the last base off of 151bp reads; that base is very low quality. Specifically, ftm=5 will trim reads so that their length is equal to zero modulo 5, and ignore reads that are already 100bp or 150bp, etc
 bbduk.sh -Xmx10g in=../raw/sampleID/your_read1.fastq.gz in2=../raw/sampleID/your_read2.fastq.gz  out=your_sample_id_trimLastBase_R1.fastq out2=your_sample_id_trimLastBase_R2.fastq ftm=5 >& your_sample_id.trimLastbase.log.txt &
 
@@ -64,8 +59,5 @@ nohup bbduk.sh in=your_sample_id_trimAdapter_R1.fastq in2=your_sample_id_trimAda
 
 #Step 4: clipping off the low quality ends
 nohup bbduk.sh -Xmx10g in=your_sample_id_filterPhix_R1.fastq in2=your_sample_id_filterPhix_R2.fastq out=your_sample_id.qc.R1.fastq out2=your_sample_id.qc.R2.fastq qtrim=rl trimq=15 minlength=30 >& your_sample_id.lowquality.log.txt&
-
-
-#you will need to run the above steps for all your samples
-
 ```
+you need to repeat the step-by-step steps for all your samples
