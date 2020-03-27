@@ -28,3 +28,12 @@ Raw read quality control is the first step of metagenomic data analysis. Quality
 >fastqc -t 2 -f fastq -o fastqc *.fastq.gz
 ```
 FastQC program will produce html quality assement reports to each fastq.gz file in the "raw" directory. To learn how to interpret the FastQC outputs, please refer to [FastQC tutorial](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/)
+
+# Short reads quality control
+
+The effectiveness of the raw sequence quality control could significantly impact the downstream analysis. The QC procedures usually include clipping off the technical sequences (primer, adapter), filtering out artifacts, low-quality reads, short reads, and contamination reads, and trimming 3’ low quality bases. In this hands-on session, you will learn how to implement  the  step-by-step quality control procedures with the Illumina paired-end dataset using the BBduk program from the BBTools software suite. To better understand the input parameters, please refer to [BBTools User Guide](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/). At the end, we will be running the fastqc program again with the quality controlled reads. In this session, you will learn:
+
+* The raw sequence quality control workflow  
+* How to perform data quality control using bbduk.sh  
+* How to merge overlapped paired-end reads using bbmerge.sh
+
