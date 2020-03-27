@@ -18,7 +18,7 @@ Raw read quality control is the first step of metagenomic data analysis. Quality
 #generate sequence stats
 >nohup perl seqStats.pl  -f fastq -s your_read1.fastaq.gz > your_read1.stats.txt&
 ```
-#### Do the quality assessment using the FastQC program
+#### Do the quality assessment using the [FastQC program](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 ```
 #make fastqc output directory
 >mkdir fastqc
