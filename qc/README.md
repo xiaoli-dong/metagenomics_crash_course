@@ -36,4 +36,4 @@ fastqc -h
 #run fastqc program
 fastqc -t 2 -f fastq -o fastqc *.fastq.gz
 ```
-fastqc program will generate html quality assement reports. To learn more about the FastQC outputs, please refer to [FastQC tutorial] (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/)
+fastqc program will generate html quality assement reports. To learn more about the FastQC outputs, please refer to [FastQC tutorial](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/)
