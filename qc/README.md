@@ -12,20 +12,19 @@ Raw read quality control is the first step of metagenomic data analysis. Quality
 #copy all your assigned raw sequence files into this directory
 
 #check the paired-end sequence file content  
-zcat your_read1.fastq.gz | head -20
-zcat your_read2.fastq.gz | head -20
+>zcat your_read1.fastq.gz | head -20
+>zcat your_read2.fastq.gz | head -20
 
-# count lines in the sequence files and divide number by 4 for number of reads (each read in a fastq file is composed of 4 lines)
-zcat your_read1.fastq.gz | wc -l
-zcat your_read2.fastq.gz | wc -l
+#generate sequence stats
+>nohup perl seqStats.pl  -f fastq -s your_read1.fastaq.gz > your_read1.stats.txt&
 ```
 Do the quality assessment using the fastqc program
 ```
-#make fastqc directory for the fastqc program output
-mkdir fastqc
+#make fastqc output directory
+>mkdir fastqc
 #print fastqc program usage message
-fastqc -h
+>fastqc -h
 #run fastqc program
-fastqc -t 2 -f fastq -o fastqc *.fastq.gz
+>fastqc -t 2 -f fastq -o fastqc *.fastq.gz
 ```
-fastqc program will generate html quality assement reports. To learn more about the FastQC outputs, please refer to [FastQC tutorial](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/)
+FastQC program will produce html quality assement reports to each fastq.gz file in the "raw" directory. To learn how to interpret the FastQC outputs, please refer to [FastQC tutorial](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/)
