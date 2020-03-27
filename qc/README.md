@@ -3,15 +3,7 @@
 
 Raw read quality control is the first step of metagenomic data analysis. Quality control is a multistep process. First, raw sequence quality assessment should be performed. This quality assessment should be proactive and comprehensive. This is an opportunity for you to know your data, which will enable you to perform downstream analyses with (more) appropriate assumptions and parameters. Second, the bioinformatics tools will be used to detect any problems, correct errors, and improve the sequence quality.  After the quality control process, the quality assessment procedure should be applied to the quality controlled reads again to make sure the remaining reads have sufficient quality for the downstream analysis.
 
-In this session, We are providing a guideline on how to perform the raw read quality assessment. The learning outcome will be:  
-* Know how to manipulate a fastq file  
-* Understand the difference between a single-end and paired-end sequencing dataset  
-* The parameters to check when doing the quality assessment  
-* How to use the fastqc program  
-* Understand the fastqc outputs
-
-For this tutorial, raw reads (fastq files) of all the samples have been placed in a folder named “raw”. Go to the data directory, check the raw sequence file contents, and count how many reads are in a dataset
-
+### Create raw directory
 ```
 # go to project directory
 #make a directory for raw sequence files and move into the directory
