@@ -37,3 +37,12 @@ The effectiveness of the raw sequence quality control could significantly impact
 * How to perform data quality control using bbduk.sh  
 * How to merge overlapped paired-end reads using bbmerge.sh
 
+### Create qc directory  
+```
+#assume you are in the project directory
+#create qc directory and move into the directory
+mkdir qc
+# go to the directory
+cd qc
+```
+
