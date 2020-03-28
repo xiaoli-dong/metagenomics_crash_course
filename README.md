@@ -5,7 +5,7 @@ This crash course is offered by [Marc Strous](https://www.ucalgary.ca/labs/ebg/p
 <p align="center"><a href="images/metagenomics_overview.pdf"><img src="images/metagenomics_overview.jpg" title="EBG Genome-centric metagenomics data analysis workflow" width=500 ></a><br><font size=10>The workflow was prepared by Jackie Zorz</font>.</p>
 
 ## Table of contents
-* [Sequence quality assesment](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/fastqc#short-read-quality-assesment)
+* [Sequence quality assesment](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/fastqc#sequence-quality-assesment)
 * [Short read quality control](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/qc)  
 * [Metagenome assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly)  
    * [MEGAHIT assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly#assembly-of-qc-reads-with-megahit)  
