@@ -27,7 +27,7 @@ The following commands will guide you to see what a [fastq file](https://en.wiki
 #the script can accept compressed or uncompressed fastq or fasta format sequence files as input 
 >perl seqStats.pl  -f fastq -s your_reads.fastaq.gz > your_read1.stats.txt
 ```
-## Do the quality assessment using the [FastQC program](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
+## Do the quality assessment using FastQC
 Now, we are ready to excute the fastqc program on our sequence files
 ```
 #prepare the fastqc output directory
