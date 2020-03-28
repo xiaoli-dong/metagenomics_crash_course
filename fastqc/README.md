@@ -20,7 +20,7 @@ The following commands will guide you to see what a [fastq file](https://en.wiki
 >zcat your_read1.fastq.gz | head -20
 >zcat your_read2.fastq.gz | head -20
 
-#download the "seqStats.pl" from the "bin" directory in this project and generate basic sequence stats
+#download the perl script [seqStats.pl](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/bin) and using it to generate basic sequence stats
 
 #print the script usage message
 >perl seqStats.pl
