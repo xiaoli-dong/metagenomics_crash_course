@@ -11,6 +11,7 @@ In this tutorial, you will use [FastQC](https://www.bioinformatics.babraham.ac.u
 >cp the_path_to_your_sequence_file/your_file .
 ```
 ### Inspect the raw sequence file  
+Before starting this section, please download "seqStats.pl" from the [bin](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/bin) directory
 The following commands will guide you to see what a [fastq file](https://en.wikipedia.org/wiki/FASTQ_format) looks like:
 ```
 #fastq file is a text file and you can view the file on linux using: more, cat, less, head, tail et al. Each fastq item has four lines ( header line, sequence line, spacer starts with +, and a quality line)
@@ -20,8 +21,7 @@ The following commands will guide you to see what a [fastq file](https://en.wiki
 >zcat your_read1.fastq.gz | head -20
 >zcat your_read2.fastq.gz | head -20
 
-#download the perl script [seqStats.pl](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/bin) and using it to generate basic sequence stats
-
+#using downloaded 'seqStats.pl" to generate basic sequence stats
 #print the script usage message
 >perl seqStats.pl
 #the script can accept compressed or uncompressed fastq or fasta format sequence files as input 
