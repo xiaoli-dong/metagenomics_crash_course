@@ -1,5 +1,6 @@
 # Short read quality assesment
-In this tutorial, you will use [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) to evaluate your sequence quality and get a quick impression of whether your data has any problems of which you should be aware before doing any furthur analysis.  
+In this tutorial, you will use [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) to evaluate your sequence quality and get a quick impression of whether your data has any problems of which you should be aware before doing any furthur analysis. FastQC exports a html summary report containing the data summay graphs and tables. 
+
 
 ### Create raw directory
 ```
