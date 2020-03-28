@@ -8,7 +8,7 @@ After finishing the quality control procedures, we need to run the [FastQC](http
 * The metagenomic short read sequence quality control workflow  
 * How to perform data quality control using BBDuk program  
 * How to merge overlapped paired-end reads using BBMerge
-#### Create qc directory  
+## Create qc directory  
 ```
 #assume you are in the project directory
 #create qc directory and move into the directory
@@ -16,7 +16,7 @@ mkdir qc
 # go to the directory
 cd qc
 ```
-#### Short reads quality control using [BBDuk](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/)
+## Short reads quality control using [BBDuk](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/)
 The order of the QC commands can affect the quality control results. 
 ```
 #Step 1: trims the last base off of 151bp reads; that base is very low quality. Specifically, ftm=5 will trim reads so that their length is equal to zero modulo 5, and ignore reads that are already 100bp or 150bp, etc
