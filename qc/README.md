@@ -3,7 +3,7 @@ The effectiveness of the raw sequence quality control could significantly impact
 
 In this hands-on session, we will implement  the  step-by-step quality control procedures with the Illumina paired-end dataset using the [BBduk program](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/) from the [BBTools software suite](https://jgi.doe.gov/data-and-tools/bbtools/). To better understand the BBduk program input parameters, please refer to [BBTools User Guide](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/).
 
-After finishing the quality control procedures, we need to run the FastQC program again over the quality controlled reads to make sure our quality control procedures are effective. In this session, you will learn:
+After finishing the quality control procedures, we need to run the FastQC program again over the quality controlled reads to check whether our quality control procedures are effective or not. In this session, you will learn:
 
 * The raw sequence quality control workflow  
 * How to perform data quality control using bbduk.sh  
