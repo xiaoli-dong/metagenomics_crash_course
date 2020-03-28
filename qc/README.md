@@ -1,13 +1,13 @@
 # Short reads quality control
 The effectiveness of the raw sequence quality control could significantly impact the downstream analysis. The QC procedures usually include clipping off the technical sequences (primer, adapter), filtering out artifacts, low-quality reads, short reads, and contamination reads, and trimming 3’ low quality bases.  
 
-In this hands-on session, we will implement  the  step-by-step quality control procedures with the Illumina paired-end dataset using the [BBduk program](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/) from the [BBTools software suite](https://jgi.doe.gov/data-and-tools/bbtools/). To better understand the BBduk program input parameters, please refer to [BBTools User Guide](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/).
+In this hands-on session, we will implement  the  step-by-step quality control procedures with the Illumina paired-end dataset using the [BBDuk program](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/) from the [BBTools software suite](https://jgi.doe.gov/data-and-tools/bbtools/). To better understand the BBduk program input parameters, please refer to [BBTools User Guide](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/).
 
 After finishing the quality control procedures, we need to run the [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) program again over the quality controlled reads to check whether our quality control procedures are effective or not. In this session, we will learn:
 
-* The raw sequence quality control workflow  
-* How to perform data quality control using bbduk.sh  
-* How to merge overlapped paired-end reads using bbmerge.sh
+* The metagenomic short read sequence quality control workflow  
+* How to perform data quality control using BBDuk program  
+* How to merge overlapped paired-end reads using BBMerge
 #### Create qc directory  
 ```
 #assume you are in the project directory
