@@ -11,7 +11,7 @@ In this tutorial, you will use [FastQC](https://www.bioinformatics.babraham.ac.u
 #copy all your assigned raw sequence files into this directory
 >cp the_path_to_your_sequence_file/your_file .
 ```
-### Inspect the raw data file  
+### Inspect the raw sequence file  
 The following commands will guide you to see what a fastq file looks like:
 ```
 #fastq file is a text file and you can view the file on linux using: more, cat, less, head, tail et al.
