@@ -9,6 +9,8 @@ In this tutorial, you will use [FastQC](https://www.bioinformatics.babraham.ac.u
 >cd raw
 #copy all your assigned raw sequence files into this directory
 >cp the_path_to_your_sequence_file/your_file .
+#or create a symbol link from the raw sequence file to your current directory
+> ln -s the_path_to_your_sequence_file/your_file
 ```
 ### Inspect the raw sequence file  
 Before starting this section, please download "seqStats.pl" from the [bin](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/bin) directory
