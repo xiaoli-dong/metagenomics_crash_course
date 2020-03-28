@@ -16,7 +16,7 @@ Assembly is one of the key steps for the genome-centric metagenome analysis. It 
 #print megahit usage message   
 >megahit -h  
 #do the assembly using quality controlled reads  
->nohup megahit -1 your_qc_R1_file -2 your_qc_R2_file -t 8 -m 0.5 -o megahit_assembly  >& megahit.log.txt &
+>megahit -1 your_qc_R1_file -2 your_qc_R2_file -t 8 -m 0.5 -o megahit_assembly  >& megahit.log.txt 
 ```
 
 After finishing the assembly, we first check the "megahit.log.txt" file to make sure no errors has occurred during assembly and also to look at some of the simple stats such as min length of the contigs, max length of the contigs, N50  
@@ -37,7 +37,7 @@ While Megahit is a fast assembler, metaSPAdes can provide longer contigs, but is
 #print metaspades usage message  
 >metaspades.py -h  
 #do the assembly using quality controlled reads  
->nohup metaspades.py -1 your_qc_R1_file -2 your_qc_R2_file -t 8 -m 100 -o metaspades_assembly  >& metaspades.log.txt&
+>metaspades.py -1 your_qc_R1_file -2 your_qc_R2_file -t 8 -m 100 -o metaspades_assembly  >& metaspades.log.txt
 ```  
 After finishing the assembly, we first check the "metaspades.log.txt" file to make sure no errors occurred during assembly
 ```
@@ -51,9 +51,9 @@ The process of assembling the quality controlled sequences from multiple samples
 ```
 #assume you are in "assembly" directory
 #megahit coassembly using quality controlled reads  
->nohup megahit -1 your_qc_R1_file1,your_qc_R1_file2,your_qc_R1_file3 -2 your_qc_R2_file,your_qc_R2_file2,your_qc_R3_file3 -t 8 -m 0.5 -o megahit_coassembly  >& megahit_coassembly.log.txt &
+>megahit -1 your_qc_R1_file1,your_qc_R1_file2,your_qc_R1_file3 -2 your_qc_R2_file,your_qc_R2_file2,your_qc_R3_file3 -t 8 -m 0.5 -o megahit_coassembly >& megahit_coassembly.log.txt
 #do the assembly using quality controlled reads  
->nohup metaspades.py --pe1-1 your_qc_R1_file --pe2-1 your_qc_R1_file2 --pe3-1 your_qc_R1_file3  --pe1-2 your_qc_R1_file --pe2-2 your_qc_R1_file2 --pe3-2 your_qc_R1_file3  -t 8 -m 100 -o metaspades_coassembly  >& metaspades_coassembly.log.txt&
+>metaspades.py --pe1-1 your_qc_R1_file --pe2-1 your_qc_R1_file2 --pe3-1 your_qc_R1_file3  --pe1-2 your_qc_R1_file --pe2-2 your_qc_R1_file2 --pe3-2 your_qc_R1_file3  -t 8 -m 100 -o metaspades_coassembly  >& metaspades_coassembly.log.txt
 ```
 ## Assembly stats
 While MEGAHIT generates some simple stats for your assembles, metaSPAdes are not generating stasts at the end of the assembling. you can download the "seqStats.pl" in the "bin" directory here to get the information.
