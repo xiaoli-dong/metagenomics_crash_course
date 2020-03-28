@@ -26,10 +26,10 @@ We will use using [BBDuk program](https://jgi.doe.gov/data-and-tools/bbtools/bb-
 >bbduk.sh -Xmx10g in=../raw/sampleID/your_read1.fastq.gz in2=../raw/sampleID/your_read2.fastq.gz  out=your_sample_id_trimLastBase_R1.fastq out2=your_sample_id_trimLastBase_R2.fastq ftm=5 threads=8 >& your_sample_id.trimLastbase.log.txt
 
 #Step 2: trim off the partial adapter
->bbduk.sh -Xmx10g in=your_sample_id_trimLastBase_R1.fastq in2=your_sample_id_trimLastBase_R2.fastq out=your_sample_id_trimAdapter_R1.fastq out2=your_sample_id_trimAdapter_R2.fastq ref=/gpfs/ebg_data/programs/BBMap/bbmap/resources/adapters.fa tbo tpe k=23 mink=11 hdist=1 ktrim=r threads=8 >& your_sample_id.trimAdapter.log.txt
+>bbduk.sh -Xmx10g in=your_sample_id_trimLastBase_R1.fastq in2=your_sample_id_trimLastBase_R2.fastq out=your_sample_id_trimAdapter_R1.fastq out2=your_sample_id_trimAdapter_R2.fastq ref=your_bbmap_program_directory/resources/adapters.fa tbo tpe k=23 mink=11 hdist=1 ktrim=r threads=8 >& your_sample_id.trimAdapter.log.txt
 
 #Step 3: filter out contaminants
->bbduk.sh in=your_sample_id_trimAdapter_R1.fastq in2=your_sample_id_trimAdapter_R2.fastq out=your_sample_id_filterPhix_R1.fastq out2=your_sample_id_filterPhix_R2.fastq outm=your_sample_id_matched_Phix.fastq ref=/gpfs/ebg_data/programs/BBMap/bbmap/resources/phix_adapters.fa.gz k=31 hdist=1 stats=your_sample_id_stats.txt threads=8 >& your_sample_id.filtercontamin.log.txt
+>bbduk.sh in=your_sample_id_trimAdapter_R1.fastq in2=your_sample_id_trimAdapter_R2.fastq out=your_sample_id_filterPhix_R1.fastq out2=your_sample_id_filterPhix_R2.fastq outm=your_sample_id_matched_Phix.fastq ref=your_bbmap_program_directory/resources/phix_adapters.fa.gz k=31 hdist=1 stats=your_sample_id_stats.txt threads=8 >& your_sample_id.filtercontamin.log.txt
 
 #Step 4: clipping off the low quality ends
 >bbduk.sh -Xmx10g in=your_sample_id_filterPhix_R1.fastq in2=your_sample_id_filterPhix_R2.fastq out=your_sample_id.qc.R1.fastq out2=your_sample_id.qc.R2.fastq qtrim=rl trimq=15 minlength=30 threads=8 >& your_sample_id.lowquality.log.txt
