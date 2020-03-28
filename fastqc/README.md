@@ -24,7 +24,7 @@ In this tutorial, you will use [FastQC](https://www.bioinformatics.babraham.ac.u
 #print the script usage message
 >perl seqStats.pl
 #the script can accept compressed or uncompressed fastq or fasta format sequence files as input 
->perl seqStats.pl  -f fastq -s your_read1.fastaq.gz > your_read1.stats.txt
+>perl seqStats.pl  -f fastq -s your_reads.fastaq.gz > your_read1.stats.txt
 ```
 ## Do the quality assessment using the [FastQC program](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 ```
