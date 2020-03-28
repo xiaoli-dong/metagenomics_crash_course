@@ -1,7 +1,8 @@
 # Requirements
 ## Basic unix skills
-Basic undstanding to the Linux command line program is required and you must understand sections 1, 2, 5, 10, 11, 12, and 13 of the linked [Linux Tutorial](https://ryanstutorials.net/linuxtutorial/) before the class. 
-## Bioinformatcs tools
+Basic undstanding to the Linux command line program is required and you must understand sections 1, 2, 5, 10, 11, 12, and 13 of the linked [Linux Tutorial](https://ryanstutorials.net/linuxtutorial/) before the class.
+## Bioinformatcs tools  
+Before the class, you need to make sure the following programs are in your Linux path  
 * [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
 * [BBDuk](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/)  
 * [MEGAHIT](https://github.com/voutcn/megahit)  
