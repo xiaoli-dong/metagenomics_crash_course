@@ -1,5 +1,5 @@
-# Short read quality assesment
-In this tutorial, you will use [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) to evaluate your sequence quality and get a quick impression of whether your data has any problems of which you should be aware before doing any furthur analysis. FastQC exports a html summary report containing the data summay graphs and tables. 
+# Sequence quality assesment
+In this tutorial, you will use [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) to evaluate your sequence quality and get a quick impression of whether your data has any problems of which you should be aware before doing any furthur analysis. FastQC exports a html summary report containing the data summay graphs and tables. To learn how to interpret the FastQC report, please check  [FastQC Help](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)
 
 
 ### Create raw directory
@@ -26,4 +26,4 @@ In this tutorial, you will use [FastQC](https://www.bioinformatics.babraham.ac.u
 #run fastqc program
 >fastqc -t 2 -f fastq -o fastqc *.fastq.gz
 ```
-FastQC program will produce html quality assement reports to each fastq.gz file in the "raw" directory. To learn how to interpret the FastQC outputs, please refer to [FastQC tutorial](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/)
+
