@@ -12,4 +12,8 @@ This crash course is offered by [Marc Strous](https://www.ucalgary.ca/labs/ebg/p
    * [Co-assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly#co-assembly)  
 * [Short read mapping](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping)  
   * [BBMap mapping](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping#short-reads-mapping-using-bbmap)  
-  * [Bowtie2 mapping](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping#short-reads-mapping-using-bowtie2)
+  * [Bowtie2 mapping](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping#short-reads-mapping-using-bowtie2)  
+* Metagenome binning
+  * MeteBAT 2 binning
+  * Metagenome bin evaluation using CheckM
+  * Metagenome bin taxonomy assignment using GTDBTk
