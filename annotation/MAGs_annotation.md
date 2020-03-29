@@ -1,6 +1,5 @@
 # MAGs annotation
-There are two ways to get the annotation for MAGs. One is to run MetaErg pipline over the fasta format MAG files one by one following the procedures in the [total metagenome annotation](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/annotation/README.md) section, the other is 
- to extract the annotation and to generate html reports for each MAG from the total annotation above. The following is an example on how to extract a MetaErg annotaiton for a specific MAG
+There are two ways to annotate MAGs using MetaErg. One is to run MetaErg pipline over the fasta format MAG files one by one following the procedures in the last section. The other method is to use MetaErg's utiliy script to extract individual MAG annotations and to generate html reports from the [total metagenome annotation](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/annotation/README.md) results we generated in the last section. The following is an example on how to extract a MetaErg annotaiton for a specific MAG
 
 ## Prepare the work directory
 ```
