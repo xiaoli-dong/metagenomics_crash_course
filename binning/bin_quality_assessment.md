@@ -40,7 +40,7 @@ CheckM also provides a number of additional commands useful for exploring genome
 #produces coverage profiles for all all the MAGs inside the "binning" directory
 >checkm coverage -x fa ../ your_sample_id.checkm_coverage.bins.tsv the_path_to_your_mapping_dir_generated_in_mapping_section/*.bam
 
-## print the "checkm profile" usage message
+# print the "checkm profile" usage message
 >checkm profile -h
 # determine the percentage of each bin relative to all genome bins under consideration.
 >checkm profile your_sample_id.checkm_coverage.bins.tsv > your_sample_id.checkm_profile.bins.txt
