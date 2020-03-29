@@ -1,7 +1,7 @@
 # MAGs taxonomy assignment
 The MAGs can be classified using [GTDB-Tk software toolkit](https://github.com/Ecogenomics/GTDBTk) based on the [GTDB Genome Taxonomy Database](https://gtdb.ecogenomic.org/) 
 
-## Excute the GTDB-TK classify workflow
+## Execute the GTDB-TK classify workflow
 ```
 #move into "binning" directory
 #classify taxonomy of genome bins generated in the binning process
