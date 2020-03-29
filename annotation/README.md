@@ -11,5 +11,6 @@ Metagenome annotation is the process of labeling sequences as genes or genomic e
 ```
 #print metaerg usage message
 >metaerg.pl -h
-
+#running metaerg
+>metaerg.pl --sp --tm --prefix your_shorten_sample_id --outdir your_shorten_sample_id_metaerg_out --locustag your_shorten_sample_id  --depth path_to_your_depth_file_generted_in_mapping_section your_contig_file_longer_than_500bp.fasta >& your_sample_id.metaerg.log.txt
 ```
