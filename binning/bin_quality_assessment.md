@@ -1,4 +1,4 @@
-# Metagenome bin quality assessment
+# MAGs quality assessment
 In this tutorial, the goodness of the metagenome bins or Metagenome Assembled Genomes (MAGs) is estimated using the fully automated [CheckM software] (https://github.com/Ecogenomics/CheckM). In short,  it provides robust estimates of MAG's completeness, contamination, and strain heterogeneity by using collocated sets of genes that are ubiquitous and single-copy within a phylogenetic lineage. 
 
 ## Create checkm directory
