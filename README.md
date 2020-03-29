@@ -18,5 +18,5 @@ This crash course is offered by [Marc Strous](https://www.ucalgary.ca/labs/ebg/p
   * [MAGs quality assesment using CheckM](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/binning/bin_quality_assessment.md#mags-quality-assessment)
   * [MAGs taxonomy assignment using GTDBTk](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/metagenome_bin_taxonomy_assignment.md#mags-taxonomy-assignment)  
 * [Metagenome annotation](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/annotation/README.md)
-  * Running MetaErg pipeline with assemblied contigs
-  * MAGs annotation or extraction
+  * [Total metagenome contig annotation using MetaErg](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/annotation/README.md)
+  * [MAGs annotation or extraction](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/annotation/MAGs_annotation.md#mags-annotation)
