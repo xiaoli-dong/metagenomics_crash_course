@@ -8,7 +8,7 @@ During the binning process, contigs originating from the same genome are grouped
 #move into binning directory
 >cd binning
 ```
-## Metagenome binning usign MetaBAT
+## Metagenome binning using MetaBAT
 ```
 #print metabat2  metabat’s parameters
 >metabat -h
