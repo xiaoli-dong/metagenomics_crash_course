@@ -12,4 +12,5 @@ Before the class, you need to make sure the following programs are in your Linux
 * [MetaErg](https://github.com/xiaoli-dong/metaerg)
 * [MetaBAT 2](https://bitbucket.org/berkeleylab/metabat/src/master/)
 * [CheckM](https://github.com/Ecogenomics/CheckM)
+* [Dendroscope](http://dendroscope.org/)
 * [GTDBTk](https://github.com/Ecogenomics/GTDBTk)
