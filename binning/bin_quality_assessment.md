@@ -9,8 +9,7 @@ In this tutorial, the goodness of the metagenome bins or Metagenome Assembled Ge
 #move into the "checkm_out" directory
 >cd checkm_out
 ```
-## Metagenome bin inspection
-
+## Inspection MAGs
 ```
 #print CheckM usage message
 >checkm -h
