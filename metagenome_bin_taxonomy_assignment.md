@@ -1,4 +1,4 @@
-# MAGs taxonomy classification
+# MAGs taxonomy assignment
 The MAGs can be classified using [GTDB-Tk software toolkit](https://github.com/Ecogenomics/GTDBTk) based on the [GTDB Genome Taxonomy Database](https://gtdb.ecogenomic.org/) 
 
 
