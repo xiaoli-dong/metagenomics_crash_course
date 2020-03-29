@@ -1,4 +1,4 @@
-# Metagenome bin taxonomy classification
+# MAGs taxonomy classification
 Genome classification can be obtained using the protein phylogeny in the Genome Taxonomy Database, which seeks to provide standardized microbial taxonomy inferred from a concatenated set of 120 single copy marker proteins for bacterial and 122 marker proteins for Archaea, with the “gtdbtk classify_wf ” command of the GTDB-Tk program. The classifications provided by the program are in the files “*.bac120.summary.tsv” and “*.ar122.summary.tsv”. The resulting Newick tree files “*.bac120.classify.tree” and “*.ar122.classify.tree” can be opened in a tree viewer software such as Dendroscope for visualization.
 
 ## Create gtdbtk directory
