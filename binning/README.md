@@ -17,5 +17,5 @@ During the binning process, contigs originating from the same genome are grouped
 
 #metabat will produce fasta format bin files in the "binning" directory and each bin file name will start with "your_sample_id.bin."
 #list all the bin files
-ls 
+>ls 
 ```
