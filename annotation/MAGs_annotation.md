@@ -10,9 +10,11 @@ There are two ways to annotate MAGs using MetaErg. One is to run MetaErg pipline
 ## Extarct MetaErg annotation for a single MAG
 ```
 #Firstly, extract the gff subset belonging to a MAG from the metaerg output
-fastaContig2Gff.pl  -c path_to_your_bin_id.fa -g path_to_your_metaerg_output/data/all.gff > your_bin_id.gff
+>fastaContig2Gff.pl  -c path_to_your_bin_id.fa -g path_to_your_metaerg_output_from_last_section/data/all.gff > your_bin_id.gff
 # Secondly, generate metaerg output and reports for the MAG
-output_reports.pl  -g your_bin_id.gff -f path_to_your_bin_id.fa -o your_bin_id_metaerg
+>output_reports.pl  -g your_bin_id.gff -f path_to_your_bin_id.fa -o your_bin_id_metaerg_out
+#check MAG annotation
+>ls your_bin_id_metaerg
 ```
 ## Extract MetaErg annotations for multiple MAGs
 Assume your interested MAGs are in a dirctory called "MAGs"
@@ -26,7 +28,7 @@ Assume you are using bash shell, you can use the following for loop to extract M
 for var in \*.fa  
 do  
 fastaContig2Gff.pl  -c $var -g path_to_your_metaerg_output/data/all.gff > $var.gff  
-output_reports.pl  -g $var.gff -f $var -o $var\_metaerg  
+output_reports.pl  -g $var.gff -f $var -o $var\_metaerg_out  
 done
-
 '''
+After finishing the extractions, the MetaErg annotations for each MAG will be in "your_bin_id.fa_metaerg_out"
