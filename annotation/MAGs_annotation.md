@@ -9,8 +9,9 @@ There are two ways to annotate MAGs using MetaErg. One is to run MetaErg pipline
 ```
 ## Extarct MetaErg annotation for a single MAG
 ```
-#Firstly, extract the gff subset belonging to a bin from the metaerg output
+#Firstly, extract the gff subset belonging to a MAG from the metaerg output
 fastaContig2Gff.pl  -c path_to_your_bin_id.fa -g path_to_your_metaerg_output/data/all.gff > your_bin_id.gff
-# Secondly, generate metaerg output and report
+# Secondly, generate metaerg output and reports for the MAG
 output_reports.pl  -g your_bin_id.gff -f path_to_your_bin_id.fa -o your_bin_id_metaerg
 ```
+## Extract MetaErg annotations for all MAGs
