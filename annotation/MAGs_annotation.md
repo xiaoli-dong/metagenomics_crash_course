@@ -30,5 +30,5 @@ do
 fastaContig2Gff.pl  -c $var -g path_to_your_metaerg_output/data/all.gff > $var.gff  
 output_reports.pl  -g $var.gff -f $var -o $var\_metaerg_out  
 done
-'''
+'''  
 After finishing the extractions, the MetaErg annotations for each MAG will be in "your_bin_id.fa_metaerg_out"
