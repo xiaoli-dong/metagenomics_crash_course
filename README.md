@@ -15,5 +15,5 @@ This crash course is offered by [Marc Strous](https://www.ucalgary.ca/labs/ebg/p
   * [Bowtie2 mapping](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping#short-reads-mapping-using-bowtie2)  
 * Metagenome binning
   * [Metagenome binning using MeteBAT](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/binning/README.md#metagenome-binning)  
-  * Metagenome bin evaluation using CheckM
+  * Metagenome bin quality assesment using CheckM
   * Metagenome bin taxonomy assignment using GTDBTk
