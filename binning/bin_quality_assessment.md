@@ -4,7 +4,8 @@ CheckM provides a set of tools for assessing the quality of genomes (bins) recov
 ## Create checkm directory
 ```
 #assume you are in the "binning" directory
-#make "checkm" directory inside the "binning" directory and move into the "checkm" directory  
+#make "checkm" directory inside the "binning" directory  
 >mkdir checkm
+#move into the "checkm" directory
 >cd checkm
 ```
