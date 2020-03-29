@@ -16,8 +16,8 @@ There are two ways to annotate MAGs using MetaErg. One is to run MetaErg pipline
 #check MAG annotation
 >ls your_bin_id_metaerg
 ```
-## Extract MetaErg annotations for multiple MAGs
-Assume your interested MAGs are in a dirctory called "MAGs"
+## Extract MetaErg annotations for many MAGs
+Assume your interested MAGs are copied into a dirctory called "MAGs"
 ```
 >mkdir MAGs
 >cp your_interested_fasta_bin_files MAGs
