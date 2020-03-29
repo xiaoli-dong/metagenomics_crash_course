@@ -1,5 +1,5 @@
 # Metagenome binning
-During the binning process, contigs originating from the same genome are grouped into bins. Each bin represents an individual population from a mixed microbial community. MetaBat2 is an automated metagenome binning software, which integrates empirical probabilistic distances of genome abundance and tetranucleotide frequency.  
+During the binning process, contigs originating from the same genome are grouped into bins. Each bin represents an individual population from a mixed microbial community. [MetaBat2](https://bitbucket.org/berkeleylab/metabat/src/master/) is an automated metagenome binning software, which integrates empirical probabilistic distances of genome abundance and tetranucleotide frequency.  
 
 ## Create binning directory
 ```
