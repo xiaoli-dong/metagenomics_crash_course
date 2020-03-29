@@ -28,7 +28,7 @@ Assume you are using bash shell, you can use the following for loop to extract M
 for var in *.fa  
 do  
 fastaContig2Gff.pl  -c $var -g path_to_your_metaerg_output/data/all.gff > $var.gff  
-output_reports.pl  -g $var.gff -f $var -o $var_metaerg_out  
+output_reports.pl  -g $var.gff -f $var -o $var\_metaerg_out  
 done
 ```
 
