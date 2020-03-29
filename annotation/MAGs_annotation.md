@@ -14,4 +14,19 @@ fastaContig2Gff.pl  -c path_to_your_bin_id.fa -g path_to_your_metaerg_output/dat
 # Secondly, generate metaerg output and reports for the MAG
 output_reports.pl  -g your_bin_id.gff -f path_to_your_bin_id.fa -o your_bin_id_metaerg
 ```
-## Extract MetaErg annotations for all MAGs
+## Extract MetaErg annotations for multiple MAGs
+Assume your interested MAGs are in a dirctory called "MAGs"
+```
+>mkdir MAGs
+>cp your_interested_fasta_bin_files MAGs
+>cd MAGs
+```
+Assume you are using bash shell, you can use the following for loop to extract MetaErg annotations for all your interested MAGs
+'''
+for var in \*.fa
+do
+fastaContig2Gff.pl  -c $var -g path_to_your_metaerg_output/data/all.gff > $var.gff
+output_reports.pl  -g $var.gff -f $var -o $var\_metaerg
+done
+
+'''
