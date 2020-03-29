@@ -19,4 +19,4 @@ The following two files contains the reference tree in Newick format containing 
 >less gtdbtk_out/your_sample_id.bin.bac120.classify.tree
 >less gtdbtk_out/your_sample_id.bin.ar122.classify.tree
 ```
-The Newick format trees can be visualized in [Dendroscope program](in http://dendroscope.org/). To learn more how to interpret the primary output files, please refer to [GTDBTK documentation](https://github.com/Ecogenomics/GTDBTk#classification-summary-file)
+The Newick format trees can be visualized in [Dendroscope program](http://dendroscope.org/). To learn more how to interpret the primary output files, please refer to [GTDBTK documentation](https://github.com/Ecogenomics/GTDBTk#classification-summary-file)
