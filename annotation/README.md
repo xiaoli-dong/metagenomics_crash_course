@@ -22,3 +22,5 @@ To facilitate the exploration of complex metagenome annotation results and make 
 #the "index.html" page inside the directory links all data and reports together and we can open it using a browser
 ```
 You can also transfer the MetaErg output "your_shorten_sample_id_metaerg_out" to you local computers for better and faster rendering. When you do the transferring, you can ignore "your_shorten_sample_id_metaerg_out/tmp", which has big data size and is not needed for the data visualization.   
+## MAGs annotation
+
