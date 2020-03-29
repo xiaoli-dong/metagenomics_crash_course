@@ -20,7 +20,7 @@ In this tutorial, the goodness of the metagenome bins or Metagenome Assembled Ge
 #excute checkm workflow 
 >checkm lineage_wf -f checkm.txt -t 8 -x fa . checkm_out
 ```
-The above checkm command will produce the MAGs' quality evaluation summary report and a phylogentic tree based on a set of 43 genes with largely congruent phylogenetic histories.
+The above "checkm lineage_wf" workflow will produce a MAGs quality evaluation summary report and a [Newick format](https://en.wikipedia.org/wiki/Newick_format) phylogentic tree based on a set of 43 genes with largely congruent phylogenetic histories.
 ```
 #View the MAGs's quality evaluaiton summary report 
 >less checkm_out/checkm.txt
@@ -28,4 +28,4 @@ The above checkm command will produce the MAGs' quality evaluation summary repor
 #View the phylogenetric tree containing reference genomes and MAGs
 >less checkm_out/checkm/storage/tree/concatenated.tre
 ```
-The checkm produced tree is in newick format and can be opened using [Dendroscope program](http://dendroscope.org/)
+The checkm produced tree can be visualized using [Dendroscope program](http://dendroscope.org/)
