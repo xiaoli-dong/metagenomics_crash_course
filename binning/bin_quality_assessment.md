@@ -29,3 +29,22 @@ The above "checkm lineage_wf" workflow will produce a MAGs quality evaluation su
 >less checkm_out/checkm/storage/tree/concatenated.tre
 ```
 The checkm produced tree can be visualized using [Dendroscope program](http://dendroscope.org/)
+## CheckM utility commands  
+CheckM also provides a number of additional commands useful for exploring genome bins.
+```
+#move into "checkm_out" direcotry
+>cd checkm_out
+
+#produces coverage profiles for all sequences within binning directory
+#This command will need the sorted and indexed bam file
+checkm coverage -x fa ../ your_sample_id.checkm_coverage.bins.tsv the_path_to_your_mapping_dir_generated_in_mapping_section/*.bam
+
+# determine the percentage of each bin relative to all genome bins under consideration.
+checkm profile your_sample_id.checkm_coverage.bins.tsv > your_sample_id.checkm_profile.bins.txt
+
+# print the "checkm unbinned" usage message
+checkm unbinned -h
+
+# extract unbinned sequences and get unbinned sequence statistics
+checkm unbinned -x fa ../ your_contig_file_longer_than_500bp.fasta your_sample_id.unbinned.fna your_sample_id.unbinned_stats.txt
+```
