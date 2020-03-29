@@ -47,7 +47,7 @@ Map the quality controlled reads back to your assembly
 The above commands will result sorted and indexed BAM file: "your_sample_id.bowtie2_sorted.bam" and "your_sample_id.bowtie2_sorted.bam.bai"  
 You need repeat the step-by-step bowtie2 mapping procedures (from step 2 to step 3) for all your sequenced libraries that you want to map to your assembly.
 ## Make contig depth profiles
-The contig depth profiles will be used in the downstream metagenome binning and annotation process.
+The contig depth profiles will be used in the downstream metagenome binning and annotation process. "jgi_summarize_bam_contig_depths" is from [MetaBAT program](https://bitbucket.org/berkeleylab/metabat/src/master/)
 ```
 #assume we are in "mapping" directory
 #generate contig depth profile using BBMap produced sorted and indexed bam files.
