@@ -46,7 +46,7 @@ CheckM also provides a number of additional commands useful for exploring genome
 >checkm profile your_sample_id.checkm_coverage.bins.tsv > your_sample_id.checkm_profile.bins.txt
 
 # print the "checkm unbinned" usage message
-checkm unbinned -h
+>checkm unbinned -h
 # extract unbinned sequences and get unbinned sequence statistics
-checkm unbinned -x fa ../ your_contig_file_longer_than_500bp.fasta your_sample_id.unbinned.fna your_sample_id.unbinned_stats.txt
+>checkm unbinned -x fa ../ your_contig_file_longer_than_500bp.fasta your_sample_id.unbinned.fna your_sample_id.unbinned_stats.txt
 ```
