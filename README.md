@@ -16,4 +16,4 @@ This crash course is offered by [Marc Strous](https://www.ucalgary.ca/labs/ebg/p
 * Metagenome binning
   * [Metagenome binning using MeteBAT](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/binning/README.md#metagenome-binning)  
   * [Metagenome bin quality assesment using CheckM](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/binning/bin_quality_assessment.md#metagenome-bin-quality-assessment)
-  * Metagenome bin taxonomy assignment using GTDBTk
+  * [Metagenome bin taxonomy assignment using GTDBTk](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/metagenome_bin_taxonomy_assignment.md#mags-taxonomy-classification)
