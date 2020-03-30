@@ -11,7 +11,7 @@ This crash course is offered by [Marc Strous](https://www.ucalgary.ca/labs/ebg/p
    * [MEGAHIT assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly#assembly-of-qc-reads-with-megahit)  
    * [metaSPAdes assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly#assembly-of-qc-reads-with-metaspades)  
    * [Co-assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly#co-assembly) 
-   * [Assembly comparison](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/assembly/assembly_evaluation.md#assembly-comparison)
+   * [Assembly comparison](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/assembly/assembly_comparison.md)
 * [Short read mapping](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping)  
   * [BBMap mapping](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping#short-reads-mapping-using-bbmap)  
   * [Bowtie2 mapping](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping#short-reads-mapping-using-bowtie2)  
