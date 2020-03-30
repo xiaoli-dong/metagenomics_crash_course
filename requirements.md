@@ -4,7 +4,8 @@ Basic undstanding to the Linux command line program is required and you must und
 ## Bioinformatcs tools  
 Before the class, you need to make sure the following programs are in your Linux path  
 * [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
-* [BBDuk](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/)  
+* [BBDuk](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/)
+* [phyloFlash](https://github.com/HRGV/phyloFlash)
 * [MEGAHIT](https://github.com/voutcn/megahit)  
 * [metaSPAdes](http://cab.spbu.ru/software/spades/)  
 * [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)  
