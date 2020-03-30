@@ -6,7 +6,7 @@ This crash course is offered by [Marc Strous](https://www.ucalgary.ca/labs/ebg/p
 * [Requirements](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/requirements.md#requirements)
 * [Sequence quality assesment](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/fastqc#sequence-quality-assesment)
 * [Short read quality control](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/qc)  
-* [Reconstruct the full-length SSU rRNA]https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/phyloflash/README.md#rapidly-reconstruct-the-ssu-rrnas)
+* [Reconstruct the full-length SSU rRNA](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/phyloflash/README.md#rapidly-reconstruct-the-ssu-rrnas)
 * [Metagenome assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly)  
    * [MEGAHIT assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly#assembly-of-qc-reads-with-megahit)  
    * [metaSPAdes assembly](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/assembly#assembly-of-qc-reads-with-metaspades)  
