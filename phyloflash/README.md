@@ -17,7 +17,7 @@
 #list output from phyloFlash program
 >ls
 your_sample_id.phyloFlash.html
-your_sample_id.phyloFlash.lgo
+your_sample_id.phyloFlash.log
 your_sample_id.phyloFlash.tar.gz
 
 #Show detailed list of phyloFlash output and temporary files
