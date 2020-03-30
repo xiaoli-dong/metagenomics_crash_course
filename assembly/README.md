@@ -8,6 +8,10 @@ Assembly is one of the key steps for the genome-centric metagenome analysis. It 
 #cd into assembly directory  
 >cd assembly/  
 ```
+## Rapidly reconstruct SSU rRNA from metagenome
+```
+
+```
 ## Assembly of qc reads with Megahit
 
 ```
