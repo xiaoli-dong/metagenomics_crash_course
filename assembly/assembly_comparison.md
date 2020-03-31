@@ -1,1 +1,2 @@
 # Assembly Comparison
+There are many assemblers available. Some assemblers work better for some datasets, and others work better for others. Choosing the “best” assembly is not straightforward and it can depend on what you’re doing. You can try several well-known assemblers (metaSPAdes, Megahit, idba-ud et.al.) and compare them with QUAST (for individual genome assembly) or MetaQUAST (for metagenome assemblies). 
