@@ -14,7 +14,6 @@ This crash course is offered by [Marc Strous](https://www.ucalgary.ca/labs/ebg/p
 * [Short read mapping](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping)  
   * [BBMap mapping](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping#short-reads-mapping-using-bbmap)  
   * [Bowtie2 mapping](https://github.com/xiaoli-dong/metagenomics_crash_course/tree/master/mapping#short-reads-mapping-using-bowtie2)  
-* [Assembly comparison](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/assembly/assembly_comparison.md)  
 * Metagenome binning
   * [Metagenome binning using MeteBAT](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/binning/README.md#metagenome-binning)  
   * [MAGs quality assesment using CheckM](https://github.com/xiaoli-dong/metagenomics_crash_course/blob/master/binning/bin_quality_assessment.md#mags-quality-assessment)
