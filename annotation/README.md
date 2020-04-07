@@ -11,8 +11,8 @@ Metagenome annotation is the process of labeling sequences as genes or genomic e
 ```
 #print metaerg usage message
 >metaerg.pl -h
-#running metaerg
->metaerg.pl --sp --tm --prefix your_shorten_sample_id --outdir your_shorten_sample_id_metaerg_out --locustag your_shorten_sample_id  --depth path_to_your_depth_file your_contig_file_longer_than_500bp.fasta >& your_sample_id.metaerg.log.txt
+#running metaerg. The depth file in the command was generated in the mapping section of the tutorial
+>metaerg.pl --sp --tm --prefix your_shorten_sample_id --outdir your_shorten_sample_id_metaerg_out --locustag your_shorten_sample_id  --depth your_depth_file your_contig_file_longer_than_500bp.fasta >& your_sample_id.metaerg.log.txt
 ```
 ## Check MetaErg output reports
 To facilitate the exploration of complex metagenome annotation results and make sense of the data, MetaErg’s annotation reports are presented in various formats. The HTML result page visually brings together text summaries, output data files, and accompanying visualizations. The interactive sortable and searchable gene, function, and profile tables, collapsible trees, sunburst hierarchical views of taxonomy and functional ontology, and other graphical representations, enable the effective interactive exploration, analysis, filtering, and intuitive navigation of complex metagenomic data 
