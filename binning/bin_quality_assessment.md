@@ -6,8 +6,6 @@ In this tutorial, the goodness of the metagenome bins or Metagenome Assembled Ge
 #assume you are in the "binning" directory
 #make "checkm_out" directory inside the "binning" directory  
 >mkdir checkm_out
-#move into the "checkm_out" directory
->cd checkm_out
 ```
 ## Inspection MAGs
 ```

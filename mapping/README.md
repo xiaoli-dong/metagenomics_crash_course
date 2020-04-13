@@ -23,7 +23,7 @@ Create output dirctory
 Map the quality controlled reads back to your assembly
 ```
 #BBMap will produce sorted and indexed bam file 
->bbmap.sh -Xmx50g ref=your_contigs_longer_than_500bp in=your_qc_R1_file in2=your_qc_R2_file minid=0.90 covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt statsfile=your_sample_id.bbmap_stats.txt threads=8 out=your_sample_id.bbmap.bam bs=bs.sh; sh bs.sh >& your_sample_id.bbmap.log.txt
+>bbmap.sh -Xmx50g ref=your_contigs_longer_than_500bp nodisk in=your_qc_R1_file in2=your_qc_R2_file minid=0.90 covstats=your_sample_id.bbmap_covstats.txt scafstats=your_sample_id.bbmap_scafstats.txt statsfile=your_sample_id.bbmap_stats.txt threads=8 out=your_sample_id.bbmap.bam bs=bs.sh; sh bs.sh >& your_sample_id.bbmap.log.txt
 ```
 The above command will result sorted and indexed BAM file: "your_sample_id.bbmap_sorted.bam" and "your_sample_id.bbmap_sorted.bam.bai"  
 
@@ -51,10 +51,10 @@ The contig depth profiles will be used in the downstream metagenome binning and 
 ```
 #assume we are in "mapping" directory
 #generate contig depth profile using BBMap produced sorted and indexed bam files.
-jgi_summarize_bam_contig_depths --outputDepth  depth_bbmap.txt mapping_bbmap/*.bam
+jgi_summarize_bam_contig_depths --outputDepth  depth_bbmap.txt mapping_bbmap/*sorted.bam
 
 #generate contig depth profile using Bowtie2 produced sorted and indexed bam files.
-jgi_summarize_bam_contig_depths --outputDepth  depth_bowtie2.txt mapping_bowtie2/*.bam
+jgi_summarize_bam_contig_depths --outputDepth  depth_bowtie2.txt mapping_bowtie2/*sorted.bam
 ```
 ## Manipulate SAM and BAM file using SAMTools  
 The mapping tools produced alignment infromation is contained in a SAM or BAM file. SAM stands for Sequence Alignment/Map format and BAM is the binary version of the plain text SAM format. Samtools is a set of utilities that manipulate alignments in the BAM format. In the following section, we explain how to manipulate SAM or BAM files with samtools 
