@@ -25,7 +25,10 @@ The above "checkm lineage_wf" workflow will produce a MAGs quality evaluation su
 #View the phylogenetric tree containing reference genomes and MAGs
 >less checkm_out/checkm/storage/tree/concatenated.tre
 ```
-The checkm produced tree can be visualized using [Dendroscope program](http://dendroscope.org/)
+The checkm produced tree can be visualized using [Dendroscope program](http://dendroscope.org/) Before open the tree in the Dendroscope, you can also use the following script from "bin" directory to add taxonomic lineage to every tree nodes:   
+```
+perl addLineage2checkmTree.pl path_to_your_checkm_installation_directory/data/img/img_metadata.tsv checkm_out/checkm/storage/tree/concatenated.tre > concatenated.lineage.tre
+```
 ## CheckM utility commands  
 CheckM also provides a number of additional commands useful for exploring genome bins.
 ```
