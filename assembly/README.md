@@ -77,6 +77,6 @@ For all the downstream analysis, the contigs shorter than 500 bp will be exclude
 For a lot of times, we are analyzing multiple samples together. To make sure all the contigs from different assemblies are having unique ids when we merge them into one fasta file, we can added a prefix for each contig  in a fasta format assembly file
 
 ```
-#add sample id to every contigs in the contigs.500.fasta file
+#add a sample id to every contigs in the contigs.500.fasta file in place
 perl -pi -le 's/>/>yourShortSampleID_/g' contigs.500.fasta
 ```
