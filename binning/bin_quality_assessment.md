@@ -38,7 +38,7 @@ CheckM also provides a number of additional commands useful for exploring genome
 # print the "checkm coverage" usage message. This command needs the sorted and indexed bam files
 >checkm coverage -h
 #produces coverage profiles for all all the MAGs inside the "binning" directory
->checkm coverage -x fa ../ your_sample_id.checkm_coverage.bins.tsv the_path_to_your_mapping_dir_generated_in_mapping_section/*.bam
+>checkm coverage -x fa ../ your_sample_id.checkm_coverage.bins.tsv the_path_to_your_mapping_dir_generated_in_mapping_section/*sorted.bam
 
 # print the "checkm profile" usage message
 >checkm profile -h
