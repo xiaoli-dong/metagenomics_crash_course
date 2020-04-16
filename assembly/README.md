@@ -73,3 +73,10 @@ For all the downstream analysis, the contigs shorter than 500 bp will be exclude
 #filter out contigs shorter than 500 bp from MEGAHIT assembly
 >perl filterContigByLength.pl megahit_assembly/final.contigs.fa > megahit_assembly/contigs.500.fasta
 ```
+## Add prefix for every contig ids in a fasta file   
+For a lot of times, we are analyzing multiple samples together. To make sure all the contigs from different assemblies are having unique ids when we merge them into one fasta file, we can added a prefix for each contig  in a fasta format assembly file
+
+```
+#add sample id to every contigs in the contigs.500.fasta file
+perl -pi -le 's/>/>yourShortSampleID_/g' contigs.500.fasta
+```
