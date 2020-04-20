@@ -10,9 +10,9 @@
 ## Execute phyloFlash
 ```
 #show program usage message
->path_to_your_phyloFlash/phyloFlash.pl -help
+>perl path_to_your_phyloFlash/phyloFlash.pl -help
 #run phyloFlash over your quality controlled sequences for each of your samples
->path_to_your_phyloFlash/phyloFlash.pl -lib your_short_sample_id -read1 your_quality_controlled_read1.fastq -read2 your_quality_controlled_read2.fastq -CPUs 8 -everything
+>perl path_to_your_phyloFlash/phyloFlash.pl -lib your_short_sample_id -read1 your_quality_controlled_read1.fastq -read2 your_quality_controlled_read2.fastq -CPUs 8 -everything
 
 #list output from phyloFlash program
 >ls
@@ -21,6 +21,6 @@ your_sample_id.phyloFlash.log
 your_sample_id.phyloFlash.tar.gz
 
 #Show detailed list of phyloFlash output and temporary files
->path_to_your_phyloFlash/phyloFlash.pl -outfiles
+>perl path_to_your_phyloFlash/phyloFlash.pl -outfiles
 ```
 On how to intepret the phyloFlash output, please refer to [phyloFlash website](https://github.com/HRGV/phyloFlash)
