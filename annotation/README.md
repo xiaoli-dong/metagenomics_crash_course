@@ -24,5 +24,5 @@ To facilitate the exploration of complex metagenome annotation results and make 
 You can also transfer the MetaErg output "your_shorten_sample_id_metaerg_out" to you local computers for better and faster rendering. When you do the transferring, you can ignore "your_shorten_sample_id_metaerg_out/tmp", which has big data size and is not needed for the data visualization. To speed up the data transfering, you can compress the MetaErg analysis results before transferring:   
 ```
 #compresse the analysis results for faster data transferring to the local computer
-tar -cvzf  ~/your_shorten_sample_id_metaerg_out.tar.gz your_shorten_sample_id_metaerg_out --exclude='your_shorten_sample_id_metaerg_out/tmp'
+tar -cvzf  your_shorten_sample_id_metaerg_out.tar.gz your_shorten_sample_id_metaerg_out --exclude='your_shorten_sample_id_metaerg_out/tmp'
 ```
