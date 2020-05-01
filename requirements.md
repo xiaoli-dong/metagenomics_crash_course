@@ -15,4 +15,3 @@ Before the class, you need to make sure the following programs are in your Linux
 * [CheckM](https://github.com/Ecogenomics/CheckM)
 * [Dendroscope](http://dendroscope.org/)
 * [GTDBTk](https://github.com/Ecogenomics/GTDBTk)
-* tar
